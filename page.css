@@ -196,6 +196,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 .wrapper-about .tentang-kami{
     width: 40%;
@@ -245,6 +246,7 @@ body{
 .copyright{
     text-align: center;
     font-size: 1.6rem;
+    color: rgb(141, 141, 141);
 }
 
 
@@ -252,6 +254,35 @@ body{
 
 
 /* MEDIA QUERY */
+
+/* SCREEN 768PX */
+@media screen and (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .page-utama{
+        text-align: center;
+    }
+
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    .information .right-content {
+        width: 80%;
+    }
+    .wrapper-about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper-about .hubungi-kami{
+        width: 80%;
+    }
+}
+
+/* SCREEN 480PX */
 @media screen and (max-width: 480px) {
     html{
         font-size: 50%;;
@@ -321,5 +352,8 @@ body{
     .wrapper-about .hubungi-kami{
     width: 90%;
 }
+    .copyright{
+        width: 70%;
+    }
     
 }
